@@ -30,7 +30,7 @@ import postgres from "postgres";
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
-const data = await sql`SELECT * FROM customers where name = `;
+const data = await sql`SELECT * FROM customers`;
 // const supabase = createClient(
 //   process.env.SUPABASE_URL!,
 //   process.env.SUPABASE_SERVICE_ROLE_KEY!
